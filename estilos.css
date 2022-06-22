@@ -1,0 +1,335 @@
+/*------ESTILOS GENERALES-----*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+ 
+
+
+
+
+/*---LAYOUT GRID---*/
+
+
+#layout_general {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    ;
+    grid-template-columns: 100% ;
+    grid-template-rows: 2fr 10fr 1fr ;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
+
+/*---MAIN CLOTHING GRID---*/
+
+
+ 
+/*-----HEADER-----*/
+
+
+.header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+
+
+
+}
+
+.main_logo {
+    width: 220px;
+  
+}
+
+
+
+a {
+   text-decoration: none; 
+} 
+
+
+/*-----MAIN INDEX-----*/
+
+.video__cover {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+/*-----CLOTHING MAIN*/
+
+
+.clothing-main{
+  display: flex;
+  justify-content: center;
+  background-color: #0e0e0e;
+}
+
+.carouselbg {
+  background-color: #0e0e0e;
+}
+  
+.clothing_item {
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.clothing_item_img {
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+    position: relative;
+}
+
+.clothing_item_img:hover {
+    transform: scale(0.95);
+}
+
+
+
+/*------COLLABS MAIN-----*/
+
+.collabs_main {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.collabs_item {
+    background-color: #a8a8a8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.collabs_img {
+    width: 50%;
+}
+
+
+
+
+ 
+/*-----WORK MAIN-----*/
+.work_main {
+
+    display: flex;
+    justify-content: center;
+    scroll-behavior: smooth;
+    background-color: #0e0e0e;
+}
+
+
+
+.work_img {
+    
+    width: 50%;
+    height: auto;
+
+}
+
+
+/*-----info main------*/
+
+.info_main{
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: 50% 50%;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.sobre_mi {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    margin: 20px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+  display: flex;
+  align-items: flex-start;
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color:black; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: black; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: black; 
+  border-color: black; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color: #ab4493; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #ab4493;
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+ 
+ 
+
+
+ 
+/*-----footer-----*/
+  
+ .footer {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    font-size: small;
+    
+}

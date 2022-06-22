@@ -1,0 +1,43 @@
+/*------ESTILOS GENERALES-----*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    body {
+        width: 100%;
+        height: 100vh;
+        #layout_general {
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "main"
+                "footer"
+            ;
+            grid-template-columns: 100% ;
+            grid-template-rows: 2fr 10fr 1fr ;
+            header {
+                grid-area: header;
+            }
+            main {
+                grid-area: main;
+            }
+            footer {
+                grid-area: footer;
+            }
+        }
+    }
+}
+
+
+ 
+ 
+
+ 
+ 
+
+
+
+

@@ -1,0 +1,77 @@
+/*hojas de estilo*/ /*------ESTILOS GENERALES-----*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+* body {
+  width: 100%;
+  height: 100vh;
+}
+* body #layout_general {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 2fr 10fr 1fr;
+}
+* body #layout_general header {
+  grid-area: header;
+}
+* body #layout_general main {
+  grid-area: main;
+}
+* body #layout_general footer {
+  grid-area: footer;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+.header .main_logo {
+  width: 220px;
+}
+.header a {
+  text-decoration: none;
+}
+
+/*-----CLOTHING MAIN*/
+.clothing-main {
+  display: flex;
+  justify-content: center;
+  background-color: #0e0e0e;
+}
+.clothing-main .carouselbg {
+  background-color: #0e0e0e;
+}
+.clothing-main .carouselbg .clothing_item {
+  background-color: white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clothing-main .carouselbg .clothing_item .clothing_item_img {
+  width: 100%;
+  height: 100%;
+  transition: all 300ms;
+  position: relative;
+}
+
+/*-----footer-----*/
+.footer {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  font-size: small;
+} 
+
+/*# sourceMappingURL=destino.css.map */

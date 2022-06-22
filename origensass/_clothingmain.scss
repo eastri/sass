@@ -1,0 +1,33 @@
+/*-----CLOTHING MAIN*/
+
+
+.clothing-main{
+    display: flex;
+    justify-content: center;
+    background-color: #0e0e0e;
+    .carouselbg {
+        background-color: #0e0e0e;
+        .clothing_item {
+            background-color: white;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .clothing_item_img {
+                width: 100%;
+                height: 100%;
+                transition: all 300ms;
+                position: relative;
+            }
+            
+        }
+    }
+}
+  
+
+    
+
+  
+
+  
